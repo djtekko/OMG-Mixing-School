@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'toony_sans_personal_useRg';
+    src: url('./font/toonysans_personal_use_only-webfont.woff2') format('woff2'),
+         url('./font/toonysans_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

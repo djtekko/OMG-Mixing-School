@@ -1,0 +1,571 @@
+@import url(./font.css);
+@import url(./common.css);
+@import url(./animation.css);
+
+form{
+   font-weight: bold;
+   padding: 0;
+   font-size: 1em;
+   margin: 0 auto;
+   border-radius: 3px;
+}
+form p{
+    padding: 2,5px;
+
+}
+form input, textarea{
+margin-top: 15px;
+padding: 10px 30px;
+}
+
+form .field{
+    border: solid 1px;
+    padding: 10px;
+}
+
+.center.content{
+    text-align: center;
+    padding: 10px;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.color-acento {color: rgb(221, 221, 96) ;}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+.header img{
+    max-width: 100px;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: white;
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+header {
+    padding: 26px 0px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    display: block;
+}
+.menu .navbar ul li a:hover{
+   cursor: pointer;
+    color: rgb(221, 221, 96) ;
+ }
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+button{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+    color: rgb(72, 69, 52);
+    background-color: rgb(248, 248, 109);
+}
+
+button:hover{
+    background-color:rgb(252, 255, 179);
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 101vh;
+    background-image:  url("media/hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    align-items: center;
+}
+
+
+#somos-omg .container{
+    text-align: center;
+    padding: 180px 12px;
+}
+
+#somos-dj .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+#somos-dj .container .img-container{
+    display: flex;
+    padding: 50px;
+    height: 300px;
+    background-image: url("media/dj2.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+}
+#somos-dj .container .texto{
+    margin-top: 30px;
+}
+
+#somos-ableton .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+#somos-ableton .container .img-container{
+    display: flex;
+    padding: 50px;
+    height: 300px;
+    background-image: url("media/ableton2.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#somos-ableton .container .texto{
+    margin-top: 30px;
+}
+
+#somos-cabina .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+#somos-cabina .container .img-container{
+    display: flex;
+    padding: 50px;
+    height: 300px;
+    background-image: url("media/cabina.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 40px;
+}
+#somos-cabina .container .texto{
+    margin-top: 30px;
+}
+
+#somos-rental .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+#somos-rental .container .texto{
+    margin-top: 30px;
+}
+#somos-rental .container .img-container{
+    display: flex;
+    padding: 50px;
+    height: 300px;
+    background-image: url("media/rental.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+}
+
+#nuestros-cursos{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-cursos .container{
+    padding: 100px 12px;
+}
+
+#nuestros-cursos p {
+    display: none;
+}
+
+#nuestros-cursos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+background-image: url("media/dj3.jpeg");
+}
+
+.carta:nth-child(2){
+background-image: url("media/ableton1.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: url("media/dj1.jpeg");
+    }
+
+.carta:last-child{
+background-image: url("media/rental.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 180px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#formulario{
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 150px 12px;
+}
+
+iframe{
+    width: 90%;
+}
+#mapa {
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 80px 12px;
+}
+#redes {
+    padding: 80px 60px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#redes .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0;
+   text-align: center;
+}
+
+#redes .container a{
+    color: rgb(221, 221, 96);
+    padding: 10px;
+    transition: all .4s ease-in-out;
+  
+}
+
+#redes .container a:hover{
+    color:rgb(72, 69, 52);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: rgb(51, 51, 22);
+}
+footer p{
+    margin: 0;
+    padding: 15px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 901px){
+    #somos-omg .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header img{
+        animation-name: rotacion;
+        animation-duration: 120s;
+    }
+  
+    #somos-omg .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    max-width: 600px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+    #somos-omg .img-container{
+        background-image: url("media/somos2.jpeg");
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        height: 500px;
+        width: 50%;
+    }
+
+    #somos-cabina .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 180px;
+    }
+
+    #somos-cabina .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    max-width: 600px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+    #somos-cabina .img-container{
+        background-image: url("media/cabina.jpg");
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        -webkit-filter: sepia(50%);
+        filter: sepia(50%);
+        height: 500px;
+        width: 50%;
+    }
+    #somos-ableton .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 180px;
+    }
+
+    #somos-ableton .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    max-width: 600px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+    #somos-ableton .img-container{
+        background-image: url("media/ableton1.jpeg");
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        -webkit-filter: sepia(50%);
+        filter: sepia(50%);
+        height: 500px;
+        width: 100%;
+
+    }
+
+    #somos-dj .container{
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    #somos-dj .texto{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+    #somos-dj .img-container{
+        background-image: url("media/dj3.jpeg");
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        -webkit-filter: sepia(50%);
+        filter: sepia(50%);
+        padding: 100px 0px;
+        height: 500px;
+        width: 75%;
+        margin-left: 130px;
+        margin-top: 30px;
+    }
+
+    #somos-rental .container{
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding-top: 180px;
+    }
+
+    #somos-rental .texto{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+    #somos-rental .img-container{
+        background-image: url("media/rental.jpg");
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        -webkit-filter: sepia(50%);
+        filter: sepia(50%);
+        padding: 100px 0px;
+        height: 500px;
+        width: 75%;
+        margin-left: 130px;
+        margin-top: 30px;
+    }
+    
+    #caracteristicas{
+        background-image: url("media/caracteristicas2.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 600px) 100px;
+    }
+    #caracteristicas .container{
+        text-align: initial;
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #nuestros-cursos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-cursos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-cursos h3{
+        margin-top: 0;
+    }
+    #nuestros-cursos .carta{
+        padding:  50px;
+    }
+    #redes .container a{
+        font-size: 40px;
+        padding: 20px 30px;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+    #redes .container{
+        padding: 40px;
+      
+    }
+}
+
+
+
+
+
+@media (max-width: 900px){
+h1{font-size: 3em;}
+h2{font-size: 2.2em;}
+h3{font-size: 1.5em;}
+
+.menu {
+    padding-right: 30px;
+    position: absolute;
+}
+.menu label {
+    display: initial;
+}
+.menu .navbar{
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+display: none;
+}
+#hero h1{
+    margin-top: 100px;
+}
+.menu .navbar ul li{
+    width: 100%;
+    background-color: rgb(248, 248, 109);
+}
+
+.menu .navbar ul li a{
+    color: black
+}
+
+.menu .navbar ul li a:hover{
+   font-weight: bold;
+   color: rgb(72, 69, 52);
+   cursor: pointer;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+
+header {
+    padding: 0px 0px;
+    }
+#redes .container a{
+    font-size: 25px;
+}
+}
